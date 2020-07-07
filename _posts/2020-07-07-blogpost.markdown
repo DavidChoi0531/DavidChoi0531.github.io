@@ -10,3 +10,8 @@ date:  2020-07-07 17:19:00 +0530
 - 포스팅 계획
   - ios 개발 일지
   - 초보 개발자의 고충
+
+  ![존나귀찮게하네][pic]
+
+
+[pic]: https://storage.googleapis.com/jjalbot-jjals/2018/12/WV2NYitqt/zzal.png
