@@ -13,6 +13,10 @@ url: "https://davidchoi0531.github.io"
 # refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
 sass:
   sass_dir: _sass
+  
+  remote_theme: thelehhman/texture
+
+  theme: texture
 
 permalink: /posts/:title/
 texture:
@@ -21,7 +25,7 @@ texture:
   date_format: "%b %-d, %Y"
   style: black
   showNav: false
-  showPicker: true
+  showPicker: false
 
   # generate social links in footer
   social_links:
@@ -43,8 +47,6 @@ plugins:
   - jekyll-seo-tag
 #  - jekyll-feed
 
-remote_theme: thelehhman/texture
 
-theme: texture
 
 
