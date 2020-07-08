@@ -4,14 +4,9 @@ title:  "첫 블로그 포스트"
 date:  2020-07-07 17:19:00 +0530
 ---
 첫 블로그 포스트
-=============
+----
 **2020-7-7** 블로그 개설
 
 - 포스팅 계획
   - ios 개발 일지
   - 초보 개발자의 고충
-
-  ![존나귀찮게하네][pic]
-
-
-[pic]: https://storage.googleapis.com/jjalbot-jjals/2018/12/WV2NYitqt/zzal.png
