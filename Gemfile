@@ -28,6 +28,7 @@ group :jekyll_plugins do
   # gem "jekyll-remote-theme"
   gem "jekyll-seo-tag"
   gem "jekyll-sitemap"
+  gem "ffi", '>= 1.15.0'
   # gem "jekyll-titles-from-headings"
 end
 
