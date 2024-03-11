@@ -1,25 +1,15 @@
-{% if paginator.total_pages > 1 %}
-<div class="pagination">
-  {% if paginator.previous_page %}
-    <a class="ml-1 mr-1" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a>
-  {% else %}
-    <span>&laquo; Prev</span>
-  {% endif %}
-
-  {% for page in (1..paginator.total_pages) %}
-    {% if page == paginator.page %}
-      <span class="ml-1 mr-1">{{ page }}</span>
-    {% elsif page == 1 %}
-      <a class="ml-1 mr-1" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
-    {% else %}
-      <a class="ml-1 mr-1" href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
-    {% endif %}
-  {% endfor %}
-
-  {% if paginator.next_page %}
-    <a class="ml-1 mr-1" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a>
-  {% else %}
-    <span>Next &raquo;</span>
-  {% endif %}
-</div>
-{% endif %}
+<h2 class="sr-only">{{ site.data.strings.pagination | default:"Pagination" }}</h2>
+<nav class="pagination heading clearfix" role="navigation">
+  <ul>
+    <li class="pagination-item older" >
+      {% assign next_title = site.data.strings.older | default:"Older" %}
+      {% assign next_href = paginator.next_page_path | relative_url %}
+      {% include link.html rel="next" title=next_title href=next_href %}
+    </li>
+    <li class="pagination-item newer" >
+      {% assign prev_title = site.data.strings.newer | default:"Newer" %}
+      {% assign prev_href = paginator.previous_page_path | relative_url %}
+      {% include link.html rel="prev" title=prev_title href=prev_href %}
+    </li>
+  </ul>
+</nav>
